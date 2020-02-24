@@ -129,8 +129,8 @@ public abstract class AnnotateVcfDb {
 		if (!id.isEmpty()) { // Skip if no new ids found
 			annotated = true;
 
-			// Add ID
-			if (!vcfEntry.getId().isEmpty()) id = vcfEntry.getId() + ";" + id;
+			// replace ID
+			//if (!vcfEntry.getId().isEmpty()) id = vcfEntry.getId() + ";" + id;
 			vcfEntry.setId(id);
 		}
 
